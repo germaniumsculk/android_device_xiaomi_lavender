@@ -27,6 +27,9 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+#Gay GMS
+WITH_GMS := true
+
 # Device identifier
 PRODUCT_NAME := aosp_lavender
 PRODUCT_MANUFACTURER := Xiaomi
