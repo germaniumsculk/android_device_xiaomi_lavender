@@ -16,6 +16,5 @@
 
 runtime_resource_overlay {
     name: "LavenderFrameworksOverlay",
-    resource_dirs: ["res"],
     vendor: true,
 }
