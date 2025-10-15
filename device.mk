@@ -104,6 +104,7 @@ PRODUCT_NAME := aosp_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_MODEL := Redmi Note 7 (AOSP)
 PRODUCT_BRAND := Xiaomi
+TARGET_BOARD_PLATFORM := sdm660
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Signing
