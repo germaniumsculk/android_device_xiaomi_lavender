@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ Copyright (C) 2018 The Android Open Source Project
   ~
@@ -20,5 +21,13 @@
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
      -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
+
+   <!-- Enable Doze (AOD + Wake-on-Notification) --> 
+  <bool name="config_dozeAfterScreenOff">true</bool> 
+  <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool> 
+  <!-- Use SystemUI DozeService --> 
+  <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string> 
+  <!-- Optional: Allow sensors to wake device --> 
+  <bool name="config_supportSystemGestureExclusion">true</bool>
 
 </resources>
