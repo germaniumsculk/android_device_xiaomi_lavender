@@ -165,11 +165,6 @@ LOCAL_HEADER_LIBRARIES += display_headers
 LOCAL_C_INCLUDES += \
         $(call project-path-for,qcom-camera)/QCamera2/HAL
 
-ifeq ($(TARGET_COMPILE_WITH_MSM_KERNEL),true)
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include/media
-LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
-endif
 ifeq ($(TARGET_TS_MAKEUP),true)
 LOCAL_CFLAGS += -DTARGET_TS_MAKEUP
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/HAL/tsMakeuplib/include
@@ -257,3 +252,5 @@ endif
 
 # Clear SDCLANG_FLAG_DEFS after use
 SDCLANG_FLAG_DEFS :=
+# Add this SAFE path instead
+LOCAL_C_INCLUDES += device/xiaomi/lavender/camera/include/media_shim
