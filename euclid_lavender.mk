@@ -25,7 +25,7 @@
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/euclid/config/common_full_phone.mk)
 
 # Build Description
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -34,7 +34,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=lavender
 
 # Device identifier
-PRODUCT_NAME := lineage_lavender
+PRODUCT_NAME := euclid_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
@@ -45,9 +45,8 @@ TARGET_VENDOR_PRODUCT_NAME := lavender
 
 # Axion Flags
 TARGET_ENABLE_BLUR := true
-AXION_PROCESSOR := Qualcomm_Snapdragon_660_Inc.
+EUCLID_PROCESSOR := Qualcomm_Snapdragon_660_Inc.
 TARGET_DISABLE_EPPE := true
-AXION_CAMERA_REAR_INFO := 48,5
-AXION_CAMERA_FRONT_INFO := 12
-AXION_MAINTAINER := 𝔽𝕤𝕚𝕩 | 𝔹𝕒𝕤𝕙𝕖𝕣
+EUCLID_MAINTAINER := 𝔽𝕤𝕚𝕩_|_𝔹𝕒𝕤𝕙𝕖𝕣
+EUCLID_DEVICE := Redmi_Note_7/7S
 TORCH_STR_SUPPORTED := true
